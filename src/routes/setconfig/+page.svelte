@@ -78,7 +78,7 @@
         <select 
           id="keys"
           on:change={() => {
-            refresh();
+            setTimeout(() => refresh());
           }}
           bind:value={selectedKey}>
           {#each serverConfigKeyList as key, index}
