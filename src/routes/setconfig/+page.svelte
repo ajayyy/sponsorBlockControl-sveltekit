@@ -49,7 +49,6 @@
       status = STATUS.SUCCESS;
       currentValue = value;
       value = '';
-      selectedKey = '';
     }
     if (result === 400) {
       status = STATUS.ERROR_INVALID;
@@ -74,7 +73,7 @@
     <fieldset>
       <legend>Set server config</legend>
       <div>
-        <label for="keys">Category:</label><br />
+        <label for="keys">Key:</label><br />
         <select 
           id="keys"
           on:change={() => {
